@@ -1,0 +1,17 @@
+export default function SidebarSvg() {
+  return (
+    <svg
+      width="61"
+      height="341"
+      viewBox="0 0 61 341"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        opacity="0.18"
+        d="M1.33331 0C5.6979 28.5896 60.0379 28 60.0379 49.5C60.0379 71 60.0379 268 60.0379 286C60.0379 304 4.33327 308 1.33331 339C-1.66664 370 1.33331 0 1.33331 0Z"
+        fill="#DFDCFC"
+      />
+    </svg>
+  )
+}
