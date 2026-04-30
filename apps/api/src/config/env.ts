@@ -1,6 +1,8 @@
 import { envSchema } from "@/validators/env"
 
 const envConfig = {
+  NODE_ENV: process.env.NODE_ENV,
+  PORT: process.env.PORT,
   APPWRITE_ENDPOINT: process.env.APPWRITE_ENDPOINT,
   APPWRITE_PROJECT_ID: process.env.APPWRITE_PROJECT_ID,
   APPWRITE_PROJECT_NAME: process.env.APPWRITE_PROJECT_NAME,
