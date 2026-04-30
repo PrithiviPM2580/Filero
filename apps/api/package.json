@@ -3,13 +3,18 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun --watch src/index.ts"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "express": "^5.2.1",
     "node-appwrite": "^24.0.0",
     "zod": "^4.4.1"
   }
