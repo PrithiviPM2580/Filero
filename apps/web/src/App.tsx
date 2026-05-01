@@ -1,5 +1,5 @@
-import Home from "./home"
+import AppRoute from "./router/app-route"
 
 export function App() {
-  return <Home />
+  return <AppRoute />
 }
