@@ -31,6 +31,8 @@
       "name": "web",
       "version": "0.0.1",
       "dependencies": {
+        "@tanstack/react-form": "^1.29.1",
+        "@tanstack/react-query": "^5.100.7",
         "@workspace/ui": "workspace:*",
         "lucide-react": "^1.14.0",
         "react": "^19.2.4",
@@ -58,8 +60,6 @@
       "version": "0.0.0",
       "dependencies": {
         "@fontsource-variable/inter": "^5.2.8",
-        "@tanstack/react-form": "^1.29.1",
-        "@tanstack/react-query": "^5.100.7",
         "class-variance-authority": "^0.7.1",
         "clsx": "^2.1.1",
         "lucide-react": "^1.14.0",

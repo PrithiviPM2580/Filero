@@ -6,13 +6,16 @@ import { App } from "./App.tsx"
 import { ThemeProvider } from "@/components/theme-provider.tsx"
 import { Toaster } from "@workspace/ui/components/sonner"
 import { BrowserRouter } from "react-router-dom"
+import TanstackQuery from "./context/tanstack-query.tsx"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <ThemeProvider>
-        <App />
-        <Toaster position="bottom-right" richColors />
+        <TanstackQuery>
+          <App />
+          <Toaster position="bottom-right" richColors />
+        </TanstackQuery>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>
