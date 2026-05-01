@@ -16,13 +16,14 @@ export const register = async (
 
   if (!accountId) throw new AppError("Failed to send OTP email", 500)
 
-  if (!existingUser) {
-    await createUser({
-      email,
-      fullName,
-      accountId,
-    })
+  if (existingUser) {
+    return next(new AppError("Email already registered", 400))
   }
+  await createUser({
+    email,
+    fullName,
+    accountId,
+  })
 
   return res.status(200).json({
     success: true,
